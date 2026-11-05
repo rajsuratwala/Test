@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevSpace | Software Engineering Lab</title>
+
+    <style>
+
+        /* Basic page settings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #101827;
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 30px 8%;
+        }
+
+        /* Navigation bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #293548;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+            color: #ff9f43;
+            letter-spacing: 1px;
+        }
+
+        .nav-text {
+            color: #9ba9bc;
+            font-size: 14px;
+        }
+
+        /* Main content */
+        .hero {
+            padding: 100px 0 65px;
+            max-width: 850px;
+        }
+
+        .tag {
+            display: inline-block;
+            color: #ff9f43;
+            background-color: #302b2b;
+            padding: 9px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 7vw, 72px);
+            line-height: 1.1;
+            margin-bottom: 25px;
+        }
+
+        h1 span {
+            color: #ff9f43;
+        }
+
+        .description {
+            color: #aab6c8;
+            font-size: 17px;
+            line-height: 1.8;
+            max-width: 620px;
+            margin-bottom: 30px;
+        }
+
+        .status {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #b8c5d6;
+            font-size: 14px;
+        }
+
+        .dot {
+            width: 9px;
+            height: 9px;
+            background-color: #42d392;
+            border-radius: 50%;
+        }
+
+        /* Information cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #192538;
+            border: 1px solid #29384d;
+            padding: 28px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #ff9f43;
+        }
+
+        .card h2 {
+            color: #ff9f43;
+            font-size: 19px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #aab6c8;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 65px;
+            padding: 20px 0;
+            border-top: 1px solid #293548;
+            color: #77869b;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        /* Mobile screen adjustments */
+        @media (max-width: 700px) {
+
+            body {
+                padding: 20px 6%;
+            }
+
+            .hero {
+                padding: 75px 0 45px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                gap: 10px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">DevSpace.</div>
+        <div class="nav-text">SOFTWARE ENGINEERING LAB</div>
+    </nav>
+
+    <main>
+
+        <section class="hero">
+
+            <div class="tag">✦ LEARNING BY BUILDING</div>
+
+            <h1>
+                Turning Ideas<br>
+                Into <span>Reality.</span>
+            </h1>
+
+            <p class="description">
+                Welcome to my Software Engineering Lab project.
+                This website is created to explore web development,
+                understand coding fundamentals and learn how to
+                build and deploy projects using Git and GitHub.
+            </p>
+
+            <div class="status">
+                <div class="dot"></div>
+                Project successfully initialized
+            </div>
+
+        </section>
+
+        <section class="cards">
+
+            <div class="card">
+                <h2>01 / Development</h2>
+                <p>
+                    Learning HTML and CSS to create
+                    structured and attractive websites.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>02 / Version Control</h2>
+                <p>
+                    Understanding Git and tracking
+                    changes throughout the development process.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>03 / Deployment</h2>
+                <p>
+                    Using GitHub Pages to publish
+                    projects and make them accessible online.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Software Engineering Lab | Learning Through Practice
+    </footer>
+
+</body>
+
+</html>
